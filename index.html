@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Jasah Meminjamkan Uang</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1518770660439-4636190af475") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;ss
+}
+
+/* overlay gelap */
+body::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+}
+
+/* container utama */
+.container{
+    position:relative;
+    width:90%;
+    max-width:1200px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+
+/* kiri */
+.left{
+    width:55%;
+}
+
+.title{
+    font-size:80px;
+    font-weight:900;
+    font-style:italic;
+    line-height:1.1;
+    color:#eafff7;
+    text-shadow:0 0 20px #00ffb3;
+}
+
+.credit{
+    margin-top:40px;
+    font-size:20px;
+    opacity:0.9;
+}
+
+.login-btn{
+    margin-top:30px;
+    padding:15px 60px;
+    font-size:28px;
+    border:none;
+    border-radius:5px;
+    background:#3d7a69;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    background:#2e5f52;
+    transform:scale(1.05);
+}
+
+/* kanan */
+.right{
+    position:relative;
+    width:40%;
+    display:flex;
+    justify-content:center;
+}
+
+.money-img{
+    width:300px;
+    border-radius:8px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.7);
+}
+
+/* tanda tanya */
+.question{
+    position:absolute;
+    top:-60px;
+    right:-30px;
+    font-size:200px;
+    color:#ff4b4b;
+    font-weight:bold;
+    text-shadow:0 0 20px rgba(255,0,0,0.8);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left">
+        <div class="title">
+            JASAH MEMINJAMKAN<br>UANG
+        </div>
+
+        <div class="credit">by dellano and archie</div>
+
+        <button class="login-btn">login</button>
+    </div>
+
+    <div class="right">
+        <div class="question">?</div>
+
+        <!-- ganti gambar sesuai kebutuhan -->
+        <img class="money-img"
+        src="https://images.unsplash.com/photo-1565514020179-026b92b2d2d1"
+        alt="money">
+    </div>
+
+</div>
+
+</body>
+</html>
